@@ -31,7 +31,7 @@ const deleteApiData = async () => {
   try {
     const deleteQueue = JSON.parse(window.localStorage.getItem("deleteQueue"));
     if (deleteQueue === null || (Array.isArray(deleteQueue) && deleteQueue.length === 0)) {
-      console.log("Delete queue is empty");
+      console.log("Delete Posts to perform Reset operation and reload the page to Apply changes");
       return;
     }
     console.log(deleteQueue);

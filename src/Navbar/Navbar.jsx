@@ -50,21 +50,6 @@ console.log()
     window.localStorage.setItem("apiData", JSON.stringify(deleteQueue));
   }, [deleteQueue]);
 
-//fetching delete calls number
-//   useEffect(() => {
-//     const deleteQueue = window.localStorage.getItem("deleteQueue");
-  
-//     if (deleteQueue) {
-//       const parsedDeleteQueue = JSON.parse(deleteQueue);
-//       setDeleteCount(parsedDeleteQueue.length);
-//     } else {
-//       setDeleteCount(0);
-//     }
-//   }, [window.localStorage.getItem("deleteQueue")]);
-  
-  
-
-
   //Fuzzy search operation
   const fuse = new Fuse(deleteQueue, {
     keys: ["userId", "id", "title", "body"],

@@ -14,7 +14,6 @@ const reducer = (state = initialState, action) => {
         deleteCount: state.deleteCount + 1,
       };
     case RESET_DELETE:
-      
       return {
         ...state,
         deleteCount: 0,
