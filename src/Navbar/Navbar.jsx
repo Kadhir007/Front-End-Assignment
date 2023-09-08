@@ -119,7 +119,7 @@ console.log()
             RESET STATE
           </Button>
         <Typography variant="h5" component="div" sx={{ color: "white" ,marginRight:'12px'}}>
-        {`Total delete calls ${deleteCount}`}
+        {`Delete queue ${deleteCount}`}
         </Typography>
         <Paper
           component="form"
