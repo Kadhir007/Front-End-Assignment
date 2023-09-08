@@ -5,7 +5,6 @@ const fetchApiData = async () => {
   try {
     // Check if data is already in localStorage
     const storedData = localStorage.getItem("apiData");
-
     if (storedData) {
       // If data exists in localStorage, parse and return it
       console.log("fetching API from local storage")
